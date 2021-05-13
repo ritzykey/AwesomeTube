@@ -1,0 +1,80 @@
+* {
+    user-select: none;
+}
+
+body {
+    background-color: rgb(65 65 65);
+    padding: 5px;
+}
+
+button, span {
+    margin: 4px 0px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    outline: none;
+    background-color: hsl(0deg 0% 46%);
+    border: 2px solid hsl(0deg 0% 46%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+button:active {
+    opacity: 1;
+    color: white;
+    background-color: rgb(65 65 65);
+    border: 2px solid hsl(0deg 0% 46%);
+}
+
+.prevnextbtn {
+    display: inline-block;
+}
+
+.prevnextbtn > button {
+    padding: 8px 10px;
+}
+
+.fas {
+    font-size: 19px;
+}
+
+.fa-image {
+    position: relative;
+    top: 2px;
+    font-size: 25px;
+    margin-right: 2px;
+}
+
+.thumbnailcontainer {
+    width: 356px;
+    height: 200px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px gray;
+}
+.thumbnailinpopup {
+    width: inherit;
+    height: inherit;
+    transition: .3s;
+}
+.thumbnailinpopup:hover {
+    cursor: pointer;
+    opacity: .4;
+}
+
+span {
+    display: inline-block;
+    width: 52px;
+    text-align: center;
+    padding: 10px 1px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 3px;
+    color: white;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="thumbnailcontainer">
+        <img class="thumbnailinpopup">
+    </div>
+    <br>
+    <button id="clickme" title="Select an element in the page">Click to start</button>
+    <button id="btnDownloadThumbnail" title="Download">
+            Download Thumbnail
+    </button>
+    <br>
+    <button id="btnSS" class="far fa-image fa-flip-horizontal" title="Screenshot"></button>
+    <div class="prevnextbtn">
+        <button id="prev" title="go back to the previous frame" class="fas fa-step-forward fa-flip-horizontal"></button>
+        <button id="next" title="skip to the next frame" class="fas fa-step-forward"></button>
+        <button class="fas fa-minus" title="Slow down the video playback rate."></button>
+        <span class="playbackRate">1.25</span>
+        <button class="fas fa-plus" title="Speed up the video playback rate."></button>
+
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>
